@@ -1,19 +1,50 @@
 aid: amodo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amodo.png
 name: Amodo
-description: Amodo is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Amodo was a European connected-insurance and telematics company founded in Zagreb, Croatia,
+  that helped insurers and brokers build and distribute personalized usage-based insurance (UBI)
+  products. Its Connected Insurance Platform combined a mobile telematics SDK, driver-behavior
+  scoring, customer segmentation, and profiling analytics to power models ranging from
+  try-before-you-buy to pay-as-you-drive and pay-per-mile. Over roughly nine years Amodo ran
+  nearly 50 telematics programs worldwide with insurers including AIG, Porsche Versicherungs,
+  Tower Insurance, and P&V, and was named one of the Financial Times' top five insurtech
+  companies. Backed by Speedinvest, Amodo was acquired by Cambridge Mobile Telematics (CMT) in
+  March 2023 and folded into CMT's European operations; the amodo.eu domain now redirects to
+  CMT, and the company no longer maintains an independent public developer or API surface.
 url: https://raw.githubusercontent.com/api-evangelist/amodo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - speedinvest
+x-acquired-by: Cambridge Mobile Telematics (CMT)
+x-acquired-date: '2023-03'
+x-status: acquired
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-no-independent-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Telematics
+- Usage-Based Insurance
+- Connected Insurance
+- Mobile SDK
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/amodo-domain-security.yml
 - type: Website
   url: https://amodo.eu
+- type: Company
+  url: https://www.cmtelematics.com/cmt-acquires-amodo/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
